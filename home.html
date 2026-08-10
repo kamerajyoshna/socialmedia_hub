@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - ConnectHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar-container"></div>
+  <div class="container">
+    <div class="grid-layout">
+      <!-- Left Sidebar Profile Brief -->
+      <div>
+        <div class="card" style="text-align: center;">
+          <img id="user-avatar" src="" class="avatar-lg" style="margin-bottom: 12px;">
+          <h3 id="user-name"></h3>
+          <p id="user-username" style="color: var(--text-muted); font-size: 0.9rem;"></p>
+        </div>
+      </div>
+      <!-- Feed Area -->
+      <div>
+        <div class="card post-create">
+          <h3>Create a Post</h3>
+          <form id="create-post-form" style="margin-top: 12px;">
+            <textarea id="post-content" placeholder="What is on your mind?" required></textarea>
+            <button type="submit" class="btn-primary">Post</button>
+          </form>
+        </div>
+        <div id="feed-container"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConnectHub - Connect & Share</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar-container"></div>
+  <div class="container" style="text-align: center; margin-top: 80px;">
+    <h1 style="font-size: 3rem; margin-bottom: 16px;">Welcome to Connect<span style="color:var(--accent)">Hub</span></h1>
+    <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px auto;">
+      A modern platform built for students and developers to interact, share ideas, and build meaningful networks.
+    </p>
+    <div>
+      <a href="register.html" class="btn-primary" style="padding: 12px 24px; font-size: 1.1rem; margin-right: 12px;">Get Started</a>
+      <a href="login.html" class="btn-secondary" style="padding: 12px 24px; font-size: 1.1rem;">Login</a>
+    </div>
+  </div>
+  <script type="module">
+    import { renderNav } from './js/auth.js';
+    renderNav();
+  </script>
+</body>
+</html>
